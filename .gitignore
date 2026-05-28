@@ -1,0 +1,53 @@
+# ============================================================
+# .gitignore para proyecto Java EE / Eclipse / Tomcat
+# ============================================================
+
+# --- Archivos compilados y build ---
+pesebre/build/
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Excepción: mantener el driver JDBC que no viene de Maven
+!pesebre/src/main/webapp/WEB-INF/lib/postgresql-42.7.8.jar
+
+# --- Eclipse IDE ---
+.classpath
+.project
+.settings/
+.metadata/
+.recommenders/
+*.launch
+*.prefs
+
+# --- IntelliJ IDEA ---
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# --- VS Code ---
+.vscode/
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Archivos temporales ---
+*.tmp
+*.bak
+*.swp
+*~
+
+# --- Variables de entorno / secretos ---
+.env
+.env.*
+secrets.*
